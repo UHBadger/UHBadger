@@ -50,6 +50,12 @@ class NavBar {
     await t.click(`#${COMPONENT_IDS.NAVBAR_LIST_STUFF}`);
   }
 
+  /** Go to the policy page. */
+  async gotoPolicyPage() {
+    await t.expect(Selector(`#${COMPONENT_IDS.NAVBAR_CURRENT_USER}`).exists).ok();
+    await t.click(`#${COMPONENT_IDS.NAVBAR_POLICY}`);
+  }
+
   /** Go to the list stuff admin page. */
   async gotoListStuffAdminPage() {
     await t.expect(Selector(`#${COMPONENT_IDS.NAVBAR_CURRENT_USER}`).exists).ok();
