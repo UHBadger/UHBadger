@@ -10,7 +10,7 @@ const Landing = () => {
 
       <Grid.Column width={14} >
       <Image  size='massive' src='/images/budget.png'/>
-        <h2 className="landing">Meet the World's Easiest Household Book!<br/>
+        <h2 className="landing">Meet the World's Easiest Financial Ledger!<br/>
         Here is a personal budget tracker, UHBadger!!</h2>
       </Grid.Column>
 

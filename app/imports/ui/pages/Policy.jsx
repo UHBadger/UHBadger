@@ -8,7 +8,7 @@ const Policy = () => (
   <Grid id={PAGE_IDS.POLICY} container centered>
     <Grid.Column width={14}>
       <h2 className="policy">About</h2>
-      <p className="policy-text">There are still a lot of people who do not use financial registers. 
+      <p className="policy-text">There are still a lot of people who do not keep track of their spending. 
         They think keeping a financial ledger is complicated and troublesome.
         It is good to manage everything in the real world perfectly, but it is still difficult for the system to do so automatically.</p>
       <p>UHBadger has been created for these users.
