@@ -6,7 +6,7 @@ import { Grid, Image, Container } from 'semantic-ui-react';
 /** Render a Not Found page if the user enters a URL that doesn't match any route. */
 const Policy = () => (
   <Grid id={PAGE_IDS.POLICY} container centered>
-    <Grid.Column width={12}>
+    <Grid.Column width={14}>
       <h2 className="policy">About</h2>
       <p className="policy-text">There are still a lot of people who do not use financial registers. 
         They think keeping a financial ledger is complicated and troublesome.
@@ -14,16 +14,16 @@ const Policy = () => (
       <p>UHBadger has been created for these users.
         Do not worry about complicated features anymore.
         Fill out the household accounts step by step with UHBadger.
-        We hope you have some change.</p><br/>
+        We hope you have some change.</p>
       <h2>Key Features</h2>
       <p>* Super Easy Way to Use<br/>
         * View Monthly History<br/>
         * Analysis of various life patterns such as eating out, drinking, and cultural life<br/>
-        * Budget management</p><br/>
+        * Budget management</p>
       <h2>Data Security</h2>
       <p>* UHBadger does not share personal information and provide it to third parties<br/>
         * UHBadger does not store personal information<br/>
-        * Users can request data deletion</p><br/>
+        * Users can request data deletion</p>
       <Image size='massive' src='images/policy.png'/>
     </Grid.Column>
 
