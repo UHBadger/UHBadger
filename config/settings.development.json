@@ -11,6 +11,9 @@
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
   ],
+  "defaultPlannings": [
+    {"title":"save money for traveling", "budget": 1000, "startTime": "6/1/2022", "endTime": "7/1/2022", "description": "hope to save at least $1000!", "owner": "john@foo.com" }
+  ],
   "public": {
     "development": true
   }
