@@ -1,12 +1,12 @@
 [![UHBadger](https://github.com/UHBadger/UHBadger/actions/workflows/ci.yml/badge.svg)](https://github.com/UHBadger/UHBadger/actions/workflows/ci.yml)
 
-For details, please see https://uhbadger.github.io/
+For installing details, please see https://uhbadger.github.io/
 
 ## What is complete so far
 * Policy Page
 * Planning Collection 
 * Spednging Collection 
-* 
+
 ## What is pending
 * Create a Planning 
 * Create a Spending 
