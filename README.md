@@ -9,7 +9,7 @@ For details, please see https://uhbadger.github.io/
 * 
 ## What is pending
 
-## Team Work
+# Team Work
 Feimei Chen:
         - Completed:
          * Planning collection 
