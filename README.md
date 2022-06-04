@@ -11,7 +11,7 @@ For details, please see https://uhbadger.github.io/
 
 # Team Work
 Feimei Chen:
-        - Completed:
-         * Planning collection 
+ - Completed:
+   - Planning collectin 
 
 
