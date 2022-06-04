@@ -2,3 +2,16 @@
 
 For details, please see https://uhbadger.github.io/
 
+## What is complete so far
+* Policy page
+* Planning collection 
+* Spednging collection 
+* 
+## What is pending
+
+## Team Work
+Feimei Chen:
+      - Compelted:
+         - Planning collection 
+
+
