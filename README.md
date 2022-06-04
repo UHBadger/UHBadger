@@ -23,7 +23,7 @@ Feimei Chen:
  Hansen Cabanero:
   - Completed:
     - Spending Collection 
-  -Handing next:
+  - Handing next:
     - not sure now
     
  Cheolhoon Choi:
