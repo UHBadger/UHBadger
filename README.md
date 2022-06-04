@@ -9,10 +9,10 @@ UHBadger is a money management and planning application that will allow for user
 
 ## What is complete so far
 * Set up a repository for the team (GitHub)
+* ESLint plugin with IntelliJ IDEA
 * Policy Page
 * Planning Collection 
 * Spednging Collection 
-* ESLint plugin with IntelliJ IDEA (?)
 
 ## What is pending
 * Create a Planning 
@@ -44,4 +44,4 @@ Feimei Chen:
 * https://github.com/UHBadger/UHBadger
 
 ### Completed Issues:
-* https://github.com/UHBadger/UHBadger/projects/1
+* [Milestone 1](https://github.com/UHBadger/UHBadger/projects/1)
