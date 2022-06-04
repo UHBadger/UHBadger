@@ -23,7 +23,7 @@ Feimei Chen:
  - Completed:
    - Planning Collection 
  - Handing next:
-   - creat a Planning 
+   - create a Planning 
    
  Hansen Cabanero:
   - Completed:
