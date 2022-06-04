@@ -19,11 +19,13 @@ Feimei Chen:
    - Planning Collection 
  - Handing next:
    - creat a Planning 
+   
  Hansen Cabanero:
   - Completed:
     - Spending Collection 
   -Handing next:
     - not sure now
+    
  Cheolhoon Choi:
   - Completed:
     - Policy Page 
