@@ -1,16 +1,18 @@
 [![UHBadger](https://github.com/UHBadger/UHBadger/actions/workflows/ci.yml/badge.svg)](https://github.com/UHBadger/UHBadger/actions/workflows/ci.yml)
 
 For installing details, please see https://uhbadger.github.io/
-# UHBadger
 
-* UHBadger will track and analyze users' spending to help them optimize their spending.
-* UHBadger is a money management and planning application that will allow for user and admin accounts. 
+# Overview
+UHBadger is a money management and planning application that will allow for user and admin accounts. It UHBadger will track and analyze users' spending to help them optimize their spending. Users can record every spending and plan what they want to spend. UHBadger will show the balance and every expenditure to help assist users in spending more than they earn. 
 
+# Assignment 2: 06/01/2022 - 06/06/2022
 
 ## What is complete so far
+* Set up a repository for the team (GitHub)
 * Policy Page
 * Planning Collection 
 * Spednging Collection 
+* ESLint plugin with IntelliJ IDEA (?)
 
 ## What is pending
 * Create a Planning 
@@ -37,4 +39,9 @@ Feimei Chen:
   - Handing next:
     - not sure now
 
+## Link
+### GihHub Repository: 
+* https://github.com/UHBadger/UHBadger
 
+### Completed Issues:
+* https://github.com/UHBadger/UHBadger/projects/1
