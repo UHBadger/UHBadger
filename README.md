@@ -19,6 +19,7 @@ UHBadger is a money management and planning application that will allow for user
 * Create a Spending 
 * Show All Plannings
 * Show All Spendings 
+* Sign up/Sign in/Sign out Page
 
 ## Team Work
 Feimei Chen:
