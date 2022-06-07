@@ -12,7 +12,7 @@ UHBadger is a money management and planning application that will allow for user
 * ESLint plugin with IntelliJ IDEA
 * Policy Page
 * Planning Collection 
-* Spednging Collection 
+* Spending Collection 
 
 ## What is pending
 * Create a Planning 
@@ -24,20 +24,20 @@ UHBadger is a money management and planning application that will allow for user
 Feimei Chen:
  - Completed:
    - Planning Collection 
- - Handing next:
+ - Handling next:
    - create a Planning 
    - show plannings 
    
 Hansen Cabanero:
   - Completed:
     - Spending Collection 
-  - Handing next:
+  - Handling next:
     - create a spending 
     
  Cheolhoon Choi:
   - Completed:
     - Policy Page 
-  - Handing next:
+  - Handling next:
     - not sure now
 
 ## Link
