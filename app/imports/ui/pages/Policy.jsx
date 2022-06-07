@@ -1,14 +1,13 @@
 import React from 'react';
-import { Header } from 'semantic-ui-react';
+import { Header, Grid, Image } from 'semantic-ui-react';
 import { PAGE_IDS } from '../utilities/PageIDs';
-import { Grid, Image, Container } from 'semantic-ui-react';
 
 /** Render a Not Found page if the user enters a URL that doesn't match any route. */
 const Policy = () => (
   <Grid id={PAGE_IDS.POLICY} container centered>
     <Grid.Column width={14}>
-      <h2 className="policy">About</h2>
-      <p className="policy-text">There are still a lot of people who do not keep track of their spending. 
+      <Header as= "h2" className="policy">About</Header>
+      <p className="policy-text">There are still a lot of people who do not keep track of their spending.
         They think keeping a financial ledger is complicated and troublesome.
         It is good to manage everything in the real world perfectly, but it is still difficult for the system to do so automatically.</p>
       <p>UHBadger has been created for these users.
