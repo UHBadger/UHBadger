@@ -26,12 +26,12 @@ Feimei Chen:
    - Planning Collection 
  - Handing next:
    - create a Planning 
-   
+   - show plannings 
  Hansen Cabanero:
   - Completed:
     - Spending Collection 
   - Handing next:
-    - not sure now
+    - create a spending 
     
  Cheolhoon Choi:
   - Completed:
