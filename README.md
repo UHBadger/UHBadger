@@ -27,7 +27,8 @@ Feimei Chen:
  - Handing next:
    - create a Planning 
    - show plannings 
- Hansen Cabanero:
+   
+Hansen Cabanero:
   - Completed:
     - Spending Collection 
   - Handing next:
