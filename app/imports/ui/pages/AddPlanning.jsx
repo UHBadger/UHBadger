@@ -24,19 +24,27 @@ const bridge = new SimpleSchema2Bridge(formSchema);
 
 /** Renders the Page for adding a document. */
 const AddPlanning = () => {
-
   // On submit, insert the data.
   const submit = (data, formRef) => {
-    const { title, budget, startTime, endTime, description } = data;
-    const owner = Meteor.user().username;
-    const collectionName = Plannings.getCollectionName();
-    const definitionData = { title, budget, startTime, endTime, description, owner };
-    defineMethod.callPromise({ collectionName, definitionData })
-      .catch(error => swal('Error', error.message, 'error'))
-      .then(() => {
-        swal('Success', 'Item added successfully', 'success');
-        formRef.reset();
-      });
+    const pattern = /^\d{2}\/\d{2}\/\d{4}$/;
+    const validDate = (date) => {
+      if (pattern.test(date)) return true;
+      return false;
+    };
+    if (validDate(data.startTime) && validDate(data.endTime)) {
+      const { title, budget, startTime, endTime, description } = data;
+      const owner = Meteor.user().username;
+      const collectionName = Plannings.getCollectionName();
+      const definitionData = { title, budget, startTime, endTime, description, owner };
+      defineMethod.callPromise({ collectionName, definitionData })
+        .catch(error => swal('Error', error.message, 'error'))
+        .then(() => {
+          swal('Success', 'Item added successfully', 'success');
+          formRef.reset();
+        });
+    } else {
+      swal('Error', 'please enter a correct format for date such as 02/20/2022!', 'error');
+    }
   };
 
   // Render the form. Use Uniforms: https://github.com/vazco/uniforms
