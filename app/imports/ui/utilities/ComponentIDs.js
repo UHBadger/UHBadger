@@ -6,6 +6,7 @@ export const COMPONENT_IDS = {
   NAVBAR_LIST_STUFF_ADMIN: 'navbar-list-stuff-admin',
   NAVBAR_CURRENT_USER: 'navbar-current-user',
   NAVBAR_LANDING_PAGE: 'navbar-landing-page',
+  NAVBAR_PLANNING_PAGE: 'navbar-planning-page',
   NAVBAR_LOGIN_DROPDOWN: 'navbar-login-dropdown',
   NAVBAR_LOGIN_DROPDOWN_SIGN_IN: 'navbar-login-dropdown-sign-in',
   NAVBAR_LOGIN_DROPDOWN_SIGN_UP: 'navbar-login-dropdown-sign-up',

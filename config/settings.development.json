@@ -12,7 +12,9 @@
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
   ],
   "defaultPlannings": [
-    {"title":"save money for traveling", "budget": 1000, "startTime": "6/1/2022", "endTime": "7/1/2022", "description": "hope to save at least $1000!", "owner": "john@foo.com" }
+    {"title":"save money for traveling", "budget": 1000, "startTime": "06/01/2022", "endTime": "07/01/2022", "description": "hope to save at least $1000!", "owner": "john@foo.com" },
+    {"title":"save money for education", "budget": 5000, "startTime": "08/01/2022", "endTime": "09/01/2022", "description": "hope to save at least $5000!", "owner": "john@foo.com" },
+    {"title":"save money for house", "budget": 5000, "startTime": "01/01/2000", "endTime": "09/01/2025", "description": "hope to save at least $1000000!", "owner": "john@foo.com" }
   ],
   "public": {
     "development": true
