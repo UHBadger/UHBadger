@@ -9,7 +9,7 @@ import SpendingItem from '../components/SpendingItem';
 /** Renders all of the plannings documents. Use <PlanningItem> to render each row. */
 const ListSpending = ({ ready, spending }) => ((ready) ? (
   <Container id={PAGE_IDS.LIST_SPENDING}>
-    <Header as="h2" textAlign="center">List Plannings</Header>
+    <Header as="h2" textAlign="center">List Spending</Header>
     <Card.Group>
       {spending.map((spendings) => <SpendingItem key={spendings._id} spending={spendings} />)}
     </Card.Group>

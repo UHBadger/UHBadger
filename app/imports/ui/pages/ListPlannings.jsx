@@ -13,7 +13,6 @@ const ListPlannings = ({ ready, plannings }) => ((ready) ? (
     <Card.Group>
       {plannings.map((planning) => <PlanningItem key={planning._id} planning={planning} />)}
     </Card.Group>
-
   </Container>
 ) : <Loader active>Getting data</Loader>);
 

@@ -8,7 +8,7 @@ import ListSpending from './ListSpending';
 
 const panes = [
   // eslint-disable-next-line react/display-name
-  { menuItem: 'List Plannings', render: () => <Tab.Pane><ListSpending/></Tab.Pane> },
+  { menuItem: 'List Spending', render: () => <Tab.Pane><ListSpending/></Tab.Pane> },
   // eslint-disable-next-line react/display-name
   { menuItem: 'Add Spending', render: () => <Tab.Pane><AddSpending/></Tab.Pane> },
 ];
