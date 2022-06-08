@@ -3,6 +3,7 @@ import { Stuffs } from '../stuff/StuffCollection';
 import { AdminProfiles } from '../user/AdminProfileCollection';
 import { UserProfiles } from '../user/UserProfileCollection';
 import { Plannings } from '../planning/PlanningCollection';
+import { Spending } from '../stuff/SpendingCollection';
 
 class MATRPClass {
   collections;
@@ -17,6 +18,7 @@ class MATRPClass {
       AdminProfiles,
       Stuffs,
       Plannings,
+      Spending,
       UserProfiles,
     ];
     /*
@@ -27,6 +29,7 @@ class MATRPClass {
       UserProfiles,
       Stuffs,
       Plannings,
+      Spending,
     ];
 
     /*
