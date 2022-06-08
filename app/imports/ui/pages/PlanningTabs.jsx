@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Loader,Tab } from 'semantic-ui-react';
+import { Container, Loader, Tab } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Plannings } from '../../api/planning/PlanningCollection';
