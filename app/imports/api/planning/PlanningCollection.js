@@ -18,7 +18,9 @@ class PlanningCollection extends BaseCollection {
       budget: Number,
       startTime: String,
       endTime: String,
-      description: String,
+      description: {
+        type: String,
+        defaultValue: 'None' },
       owner: String,
     }));
   }
