@@ -10,10 +10,15 @@ import { PAGE_IDS } from '../utilities/PageIDs';
 import { Plannings } from '../../api/planning/PlanningCollection';
 
 // Create a schema to specify the structure of the data to appear in the card.
+const today = new Date().toLocaleDateString('en-US',
+  { year: 'numeric', month: '2-digit', day: '2-digit' });
 const formSchema = new SimpleSchema({
   title: String,
   budget: Number,
-  startTime: String,
+  startTime: {
+    type: String,
+    defaultValue: today,
+  },
   endTime: String,
   description: {
     type: String,
@@ -69,8 +74,8 @@ const AddPlanning = () => {
                 <Card.Content>
                   <TextField name='title' />
                   <NumField name='budget' />
-                  <TextField name='startTime' placeholder = '01/31/2022'/>
-                  <TextField name='endTime' placeholder='02/20/2022'/>
+                  <TextField name='startTime'placeholder = 'mm/dd/yyyy'/>
+                  <TextField name='endTime' placeholder='mm/dd/yyyy'/>
                   <LongTextField name= 'description'/>
                 </Card.Content>
               </Card>

@@ -10,7 +10,8 @@ import { PAGE_IDS } from '../utilities/PageIDs';
 import { Spending } from '../../api/stuff/SpendingCollection';
 
 export const spendingCategories = ['home', 'food', 'transportation', 'entertainment', 'miscellaneous', 'income'];
-
+const today = new Date().toLocaleDateString('en-US',
+  { year: 'numeric', month: '2-digit', day: '2-digit' });
 // Create a schema to specify the structure of the data to appear in the card.
 const formSchema = new SimpleSchema({
   title: String,
@@ -20,7 +21,10 @@ const formSchema = new SimpleSchema({
     type: String,
     allowedValues: spendingCategories,
   },
-  date: Date,
+  date: {
+    type: Date,
+    defaultValue: today,
+  },
 });
 
 const bridge = new SimpleSchema2Bridge(formSchema);
@@ -69,7 +73,7 @@ const AddSpending = () => {
                 <Card.Content>
                   <TextField name='title' />
                   <NumField name='amount' />
-                  <TextField name='date' placeholder = '01/31/2022'/>
+                  <TextField name='date' placeholder = 'mm/dd/yyyy'/>
                   <RadioField name='category' />
                   <LongTextField name= 'description'/>
                 </Card.Content>
