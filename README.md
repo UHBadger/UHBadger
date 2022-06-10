@@ -63,7 +63,7 @@ Hansen Cabanero:
    * Edit Spending 
    * Delete Planning
    * Delete Spending 
-## Roles and responsibilities
+## Roles and Responsibilities
 Feimei Chen:
  - New Completions:
    - Create a Planning 
