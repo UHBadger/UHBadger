@@ -57,7 +57,7 @@ Hansen Cabanero:
    * Add Planning 
    * Add Spendings 
 ## Link
-   ** https://github.com/UHBadger/UHBadger
+   * https://github.com/UHBadger/UHBadger
 ## Pending
    * Edit Planning
    * Edit Spending 
