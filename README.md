@@ -5,7 +5,7 @@ For installing details, please see https://uhbadger.github.io/
 # Overview
 UHBadger is a money management and planning application that will allow for user and admin accounts. It will track and analyze users' spending to help them optimize their spending. Users can record every spending and plan what they want to spend. UHBadger will show the balance and every expenditure to help assist users in spending more than they earn. 
 
-# Assignment 3: 06/01/2022 - 06/06/2022
+# Assignment 2: 06/01/2022 - 06/06/2022
 
 ## What is complete so far
 * Set up a repository for the team (GitHub)
@@ -50,7 +50,7 @@ Hansen Cabanero:
 ### Completed Issues:
 * [Milestone 1](https://github.com/UHBadger/UHBadger/projects/1)
 
- # Assignment 2: 06/07/2022 - 06/13/2022
+ # Assignment 3: 06/07/2022 - 06/13/2022
 ## Progress
    * Show Plannings
    * Show Spendings
