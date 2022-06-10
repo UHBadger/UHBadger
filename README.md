@@ -18,7 +18,7 @@ UHBadger is a money management and planning application that will allow for user
 * Create a Planning 
 * Create a Spending 
 * Show All Plannings
-* Show All Spendings 
+* Show All Spendings
 * Sign up/Sign in/Sign out Page
 
 ## Team Work
@@ -26,14 +26,14 @@ Feimei Chen:
  - Completed:
    - Planning Collection 
  - Handling next:
-   - create a Planning 
-   - show plannings 
+   - Create a Planning 
+   - Show plannings 
    
 Hansen Cabanero:
   - Completed:
     - Spending Collection 
   - Handling next:
-    - create a spending 
+    - Create a spending 
     
  Cheolhoon Choi:
   - Completed:
@@ -49,3 +49,44 @@ Hansen Cabanero:
 
 ### Completed Issues:
 * [Milestone 1](https://github.com/UHBadger/UHBadger/projects/1)
+
+ # Assignment 2: 06/07/2022 - 06/13/2022
+## Progress
+   * Show Plannings
+   * Show Spendings
+   * Add Planning 
+   * Add Spendings 
+## Link
+   ** https://github.com/UHBadger/UHBadger
+## Pending
+   * Edit Planning
+   * Edit Spending 
+   * Delete Planning
+   * Delete Spending 
+## Roles and responsibilities
+Feimei Chen:
+ - New Completions:
+   - Create a Planning 
+   - Show Plannings 
+ - Current:
+   - Edit Planning
+ - Next:
+   - Delete Planning
+   
+Hansen Cabanero:
+  - New completions:
+    - Create a Spending 
+    - Show Spendings
+  - Current:
+    - Edit Spending
+  - Next:
+    - Delete Spending
+    
+ Cheolhoon Choi:
+  - New completions:
+    - sign in 
+  - Current:
+    - not sure
+  - Next: 
+    - not sure 
+  
