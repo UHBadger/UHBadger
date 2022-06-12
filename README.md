@@ -56,8 +56,6 @@ Hansen Cabanero:
    * Show Spendings
    * Add Planning 
    * Add Spendings 
-## Link
-   * https://github.com/UHBadger/UHBadger
 ## Pending
    * Edit Planning
    * Edit Spending 
@@ -89,4 +87,5 @@ Hansen Cabanero:
     - not sure
   - Next: 
     - not sure 
-  
+  ## Link
+   * https://github.com/UHBadger/UHBadger
