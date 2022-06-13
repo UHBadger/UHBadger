@@ -50,7 +50,7 @@ Hansen Cabanero:
 ### Completed Issues:
 * [Milestone 1](https://github.com/UHBadger/UHBadger/projects/1)
 
- # Assignment 3: 06/07/2022 - 06/13/2022
+# Assignment 3: 06/07/2022 - 06/13/2022
 ## Progress
    * Show Plannings
    * Show Spendings
@@ -61,6 +61,7 @@ Hansen Cabanero:
    * Edit Spending 
    * Delete Planning
    * Delete Spending 
+
 ## Roles and Responsibilities
 Feimei Chen:
  - New Completions:
@@ -82,10 +83,16 @@ Hansen Cabanero:
     
  Cheolhoon Choi:
   - New completions:
-    - Sign In 
+    - Sign Out Page
+    - Footer 
   - Current:
-    - not sure
+    - Change Site's Style on the Client Side
   - Next: 
-    - not sure 
-  ## Link
-   * https://github.com/UHBadger/UHBadger
+    - Modifying Administrator Features
+ 
+## Link
+### GihHub Repository:
+* https://github.com/UHBadger/UHBadger
+   
+### Completed Issues:
+* [Milestone 2](https://github.com/UHBadger/UHBadger/projects/2)
