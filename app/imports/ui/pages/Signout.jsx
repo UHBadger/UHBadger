@@ -10,12 +10,12 @@ const Signout = () => {
   return (
     <Header id={PAGE_IDS.SIGN_OUT} as="h2" textAlign="center">
       <br />
-      <p className="signout-page" style={{ color: 'rgb(44, 62, 80)' }}>You are signed out.</p>
+      <p className="signout-page">You are signed out.</p>
       <div>
         <Image className="signout-image" centered src="images/signout.jpeg"/></div>
       <br/>
       <Link to="/">
-        <Button size="big" style={{ color: 'rgb(44, 62, 80)' }} to="/">Return to Home</Button>
+        <Button size="big" color='teal' to="/">Return to Home</Button>
       </Link>
     </Header>
   );
