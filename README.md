@@ -55,7 +55,7 @@ Hansen Cabanero:
    * Show Plannings
    * Show Spendings
    * Add Planning 
-   * Add Spending 
+   * Add Spendings 
 ## Pending
    * Edit Planning
    * Edit Spending 
@@ -82,7 +82,7 @@ Hansen Cabanero:
     
  Cheolhoon Choi:
   - New completions:
-    - Sign In 
+    - sign in 
   - Current:
     - not sure
   - Next: 
