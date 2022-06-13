@@ -1,3 +1,19 @@
 .landing {
     text-align: center;
   }
+
+.policy-image {
+  margin-top: 30px;
+  height: 400px;
+  width: 700px;
+  border-radius: 70%;
+}
+
+#signout-page {
+  font-size: x-large;
+}
+  
+.signout-image {
+  height: 400px;
+  width: 700px;
+}
