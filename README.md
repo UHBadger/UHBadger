@@ -56,11 +56,17 @@ Hansen Cabanero:
    * Show Spendings
    * Add Planning 
    * Add Spending 
+   * Modifying Sign Out Page
+   * Modifying Footer 
+
 ## Pending
    * Edit Planning
    * Edit Spending 
    * Delete Planning
    * Delete Spending 
+   * Change Site's Style on the Client Side
+   * Modifying Admin Features
+   * Modifying Navbar 
 
 ## Roles and Responsibilities
 Feimei Chen:
@@ -88,7 +94,8 @@ Hansen Cabanero:
   - Current:
     - Change Site's Style on the Client Side
   - Next: 
-    - Modifying Administrator Features
+    - Modifying Admin Features
+    - Modifying Navbar
  
 ## Link
 ### GihHub Repository:
