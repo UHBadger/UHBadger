@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 /** Renders a single row in the List planning card * */
 const PlanningItem = ({ planning }) => (
@@ -17,7 +17,7 @@ const PlanningItem = ({ planning }) => (
     <Card.Content extra>
       <div className='ui two buttons'>
         <Button basic color='green'>
-        Edit
+          <Link to={`/planning-item/${planning._id}`}>Edit</Link>
         </Button>
         <Button basic color='red'>
         Delete

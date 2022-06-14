@@ -21,6 +21,7 @@ import { ROLE } from '../../api/role/Role';
 import PlanningTabs from '../pages/PlanningTabs';
 import SpendingPage from '../pages/SpendingPage';
 import EditSpending from '../pages/EditSpending';
+import EditPlanning from '../pages/EditPlanning';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -38,6 +39,7 @@ class App extends React.Component {
             <ProtectedRoute path="/list" component={ListStuff}/>
             <ProtectedRoute path="/planning-tabs" component={PlanningTabs}/>
             <ProtectedRoute path="/spending" component={SpendingPage}/>
+            <ProtectedRoute path="/planning-item/:_id" component={EditPlanning}/>
             <ProtectedRoute path="/spending-item/:_id" component={EditSpending}/>
             <ProtectedRoute path="/add" component={AddStuff}/>
             <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
