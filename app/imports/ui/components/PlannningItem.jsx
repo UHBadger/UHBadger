@@ -2,6 +2,9 @@ import React from 'react';
 import { Card, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
+import swal from 'sweetalert';
+import { removeItMethod } from '../../api/base/BaseCollection.methods';
+import { Plannings } from '../../api/planning/PlanningCollection';
 
 /** Renders a single row in the List planning card * */
 const PlanningItem = ({ planning }) => (
@@ -19,7 +22,28 @@ const PlanningItem = ({ planning }) => (
         <Button basic color='green'>
           <Link to={`/planning-item/${planning._id}`}>Edit</Link>
         </Button>
-        <Button basic color='red'>
+        <Button basic color='red' onClick={() => {
+          swal({
+            title: 'Are you sure?',
+            text: 'Once deleted, you will not be able to recover this Planning',
+            icon: 'warning',
+            buttons: true,
+            dangerMode: true,
+          })
+            .then((willDelete) => {
+              if (willDelete) {
+                const collectionName = Plannings.getCollectionName();
+                const instance = planning._id;
+                removeItMethod.callPromise({ collectionName, instance })
+                  .catch(error => swal('Error', error.message, 'error'))
+                  .then(() => {
+                    swal('Success', 'Planning has been deleted!', 'success');
+                  });
+              } else {
+                swal("Don't Worry", 'Your planning file is safe!', 'info');
+              }
+            });
+        }}>
         Delete
         </Button>
       </div>
