@@ -41,7 +41,7 @@ const EditPlanning = ({ doc, ready, location }) => {
       <br/>
       <div>
         <Header as="h2" textAlign="center">
-          Edit My Planning
+          Edit Planning
         </Header>
       </div>
       <br/>
