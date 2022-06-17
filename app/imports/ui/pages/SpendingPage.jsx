@@ -14,7 +14,7 @@ const panes = [
 ];
 
 const SpendingPage = ({ ready }) => ((ready) ? (
-  <Container>
+  <Container className="spending">
     <div>
       <h1 className="ui center aligned header">
           Spending Page

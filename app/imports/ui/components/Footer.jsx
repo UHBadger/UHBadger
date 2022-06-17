@@ -5,8 +5,8 @@ import { Grid, List } from 'semantic-ui-react';
 const Footer = () => {
   const divStyle = { paddingTop: '15px' };
   return (
-    <footer>
-      <div style={divStyle} className="ui container">
+    <footer className="footer">
+      <div style={divStyle} className="ui center aligned container" inverted>
         <Grid columns={2}>
           <Grid.Column className="inverted" textAlign="center">
             <hr />
