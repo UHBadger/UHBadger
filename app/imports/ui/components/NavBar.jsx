@@ -16,13 +16,11 @@ const NavBar = ({ currentUser }) => {
       <Menu.Item id={COMPONENT_IDS.NAVBAR_LANDING_PAGE} as={NavLink} activeClassName="" exact to="/">
         <Header inverted as='h1'>UHBadger</Header>
       </Menu.Item>
-      {Roles.userIsInRole(Meteor.userId(), [ROLE.USER]) ? (
-        [<Menu.Item id={COMPONENT_IDS.NAVBAR_SPENDING_PAGE} as={NavLink} activeClassName="active" exact to="/spending" key='spending'>Spending</Menu.Item>,
-          <Menu.Item id={COMPONENT_IDS.NAVBAR_PLANNING_PAGE} as={NavLink} activeClassName="active" exact to="/planning-tabs" key='planning'>Planning</Menu.Item>]
-      ) : ''}
       {currentUser ? (
         [<Menu.Item id={COMPONENT_IDS.NAVBAR_ADD_STUFF} as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
           <Menu.Item id={COMPONENT_IDS.NAVBAR_LIST_STUFF} as={NavLink} activeClassName="active" exact to="/list" key='list'>List Stuff</Menu.Item>,
+          <Menu.Item id={COMPONENT_IDS.NAVBAR_PLANNING_PAGE} as={NavLink} activeClassName="active" exact to="/planning-tabs" key='planning'>Planning</Menu.Item>,
+          <Menu.Item id={COMPONENT_IDS.NAVBAR_SPENDING_PAGE} as={NavLink} activeClassName="active" exact to="/spending" key='spending'>Spending</Menu.Item>,
           <Menu.Item id={COMPONENT_IDS.NAVBAR_POLICY} as={NavLink} activeClassName="active" exact to="/policy" key='policy '>Policy </Menu.Item>]
       ) : ''}
       {Roles.userIsInRole(Meteor.userId(), [ROLE.ADMIN]) ? (
