@@ -116,13 +116,15 @@ Feimei Chen:
    - Update User Collection
    - Delete User Accout
    - Analyze User Planning 
+   
 Hansen Cabanero:
   - New completions:
     - Edit Spending
     - Delete Spending
   - Next:
     - not sure now   
- Cheolhoon Choi:
+Cheolhoon Choi:
+
   - New completions:
     - Modifying Admin Features
     - Modifying Navbar
