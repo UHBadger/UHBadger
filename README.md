@@ -122,9 +122,9 @@ Hansen Cabanero:
     - Edit Spending
     - Delete Spending
   - Next:
-    - not sure now   
+    - not sure now 
+      
 Cheolhoon Choi:
-
   - New completions:
     - Modifying Admin Features
     - Modifying Navbar
