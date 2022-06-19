@@ -12,10 +12,10 @@ const Signout = () => {
       <br />
       <p className="signout-page">You are signed out.</p>
       <div>
-        <Image className="signout-image" centered src="images/signout.jpeg"/></div>
+        <Image className="signout-image" centered src="images/budget.png"/></div>
       <br/>
       <Link to="/">
-        <Button size="big" color='teal' to="/">Return to Home</Button>
+        <Button size="big" color='blue' to="/">Return to Home</Button>
       </Link>
     </Header>
   );

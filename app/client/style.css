@@ -1,12 +1,36 @@
+body {
+  background-color: #CDDAE4 !important;
+}
+
+.landing-page {
+  background-color: #AFC4D4;
+} 
+
+.landing-image {
+  height: 400px;
+  width: 700px;
+  margin-bottom: 30px;
+} 
+
 .landing {
-    text-align: center;
-  }
+  text-align: center;
+}
+
+.policy-page {
+  background-color: #ABD7D9;
+  margin-bottom: 30px;
+}
 
 .policy-image {
   margin-top: 30px;
+  margin-bottom: 30px;
   height: 400px;
-  width: 700px;
-  border-radius: 70%;
+  width: 600px;
+  border-radius: 50%;
+}
+
+.policy-text {
+  font-size: medium;
 }
 
 #signout-page {
@@ -16,4 +40,14 @@
 .signout-image {
   height: 400px;
   width: 700px;
+}
+
+.spending {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.planning {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

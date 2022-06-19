@@ -10,7 +10,7 @@ import { COMPONENT_IDS } from '../utilities/ComponentIDs';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 const NavBar = ({ currentUser }) => {
-  const menuStyle = { marginBottom: '10px' };
+  const menuStyle = { marginBottom: '10px', backgroundColor: '#6088A9' };
   return (
     <Menu style={menuStyle} attached="top" borderless inverted>
       <Menu.Item id={COMPONENT_IDS.NAVBAR_LANDING_PAGE} as={NavLink} activeClassName="" exact to="/">
