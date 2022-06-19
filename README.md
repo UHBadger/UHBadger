@@ -96,7 +96,39 @@ Hansen Cabanero:
   - Next: 
     - Modifying Admin Features
     - Modifying Navbar
- 
+
+# Assignment 4: 06/14/2022 - 06/20/2022
+## What was done 
+   * Edit Spending 
+   * Edit Planning 
+   * Delete Spending 
+## What is pending now
+   * Update User Collection
+   * Delete User Accout 
+   * Analyze User Spending 
+   * Analyze User Planning 
+## Roles and Responsibilities
+Feimei Chen:
+ - New Completions:
+   - Edit Planning 
+   - Delete Planning
+ - Next:
+   - Update User Collection
+   - Delete User Accout
+   - Analyze User Planning 
+Hansen Cabanero:
+  - New completions:
+    - Edit Spending
+    - Delete Spending
+  - Next:
+    - not sure now   
+ Cheolhoon Choi:
+  - New completions:
+    - Modifying Admin Features
+    - Modifying Navbar
+  - Next: 
+    - not sure now 
+
 ## Link
 ### GihHub Repository:
 * https://github.com/UHBadger/UHBadger
