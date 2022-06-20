@@ -104,9 +104,9 @@ Hansen Cabanero:
    * Delete Spending 
 ## What is pending now
    * Update User Collection
-   * Delete User Accout 
+   * Delete User Account 
    * My Profile page
-   * Edit My Profile(include edit verification to delete accout)
+   * Edit My Profile(include edit verification to delete account)
    * Analyze User Spending 
    * Analyze User Planning 
 ## Roles and Responsibilities
@@ -114,10 +114,12 @@ Feimei Chen:
  - New Completions:
    - Edit Planning 
    - Delete Planning
- - Next:
    - Update User Collection
    - Edit My Profile 
    - My Profile Page 
+ - Next:
+   - Delete Account
+   - Analyze User Planning 
    
 Hansen Cabanero:
   - New completions:
