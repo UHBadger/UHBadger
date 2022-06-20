@@ -136,8 +136,8 @@ Cheolhoon Choi:
     - Change the Style on the Client Side
     - Navbar
   - Next: 
-    - Deployment 
-    - Start Wiki Page
+    - Update tests.testcafe
+    - Deployment
 
 ## Link
 ### GihHub Repository:
