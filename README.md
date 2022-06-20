@@ -133,8 +133,8 @@ Hansen Cabanero:
       
 Cheolhoon Choi:
   - New completions:
-    - Modifying Admin Features
-    - Modifying Navbar
+    - Change the Style on the Client Side
+    - Navbar
   - Next: 
     - Deployment 
     - Start Wiki Page
