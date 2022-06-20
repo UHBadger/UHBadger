@@ -136,11 +136,9 @@ Cheolhoon Choi:
     - Modifying Admin Features
     - Modifying Navbar
   - Next: 
-    - not sure now 
+    - Deployment 
+    - Start Wiki Page
 
 ## Link
 ### GihHub Repository:
 * https://github.com/UHBadger/UHBadger
-   
-### Completed Issues:
-* [Milestone 2](https://github.com/UHBadger/UHBadger/projects/2)
