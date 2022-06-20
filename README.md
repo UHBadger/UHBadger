@@ -105,6 +105,7 @@ Hansen Cabanero:
 ## What is pending now
    * Update User Collection
    * Delete User Accout 
+   * My Profile page(delete my accout)
    * Analyze User Spending 
    * Analyze User Planning 
 ## Roles and Responsibilities
@@ -115,7 +116,7 @@ Feimei Chen:
  - Next:
    - Update User Collection
    - Delete User Accout
-   - Analyze User Planning 
+   - My Profile Page 
    
 Hansen Cabanero:
   - New completions:
