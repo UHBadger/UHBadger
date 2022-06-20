@@ -12,25 +12,32 @@ import { updateMethod } from '../../api/base/BaseCollection.methods';
 /** Renders all of the plannings documents. Use <PlanningItem> to render each row. */
 const MyProfile = ({ ready, userProfile }) => {
   const deleteAccount = () => {
-    swal({
-      title: 'Are you sure?',
-      text: 'Once deleted, you will not be able to recover your account',
-      icon: 'warning',
-      buttons: true,
-      dangerMode: true,
-    })
-      .then((willDelete) => {
-        if (willDelete) {
-          const collectionName = UserProfiles.getCollectionName();
-          const updateData = {};
-          updateData.verification = true;
-          updateData.id = userProfile._id;
-          updateMethod.callPromise({ collectionName, updateData }).catch(error => swal('Error', error.message, 'error'))
-            .then(() => {
-              swal('Success', 'your account will be deleted as soon as possible!', 'success');
-            });
-        }
-      });
+    if (userProfile.verification) {
+      swal({
+        title: 'Pending',
+        text: 'You have deleted the account and the administrator will delete it as soon as possible.',
+        icon: 'success' });
+    } else {
+      swal({
+        title: 'Are you sure?',
+        text: 'Once deleted, you will not be able to recover your account',
+        icon: 'warning',
+        buttons: true,
+        dangerMode: true,
+      })
+        .then((willDelete) => {
+          if (willDelete) {
+            const collectionName = UserProfiles.getCollectionName();
+            const updateData = {};
+            updateData.verification = true;
+            updateData.id = userProfile._id;
+            updateMethod.callPromise({ collectionName, updateData }).catch(error => swal('Error', error.message, 'error'))
+              .then(() => {
+                swal('Success', 'your account will be deleted as soon as possible!', 'success');
+              });
+          }
+        });
+    }
 
   };
   return (ready) ? (
