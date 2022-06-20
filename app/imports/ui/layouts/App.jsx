@@ -22,6 +22,8 @@ import PlanningTabs from '../pages/PlanningTabs';
 import SpendingPage from '../pages/SpendingPage';
 import EditSpending from '../pages/EditSpending';
 import EditPlanning from '../pages/EditPlanning';
+import MyProfile from '../pages/MyProfile';
+import EditMyProfile from '../pages/EditMyProfile';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -37,7 +39,9 @@ class App extends React.Component {
             <Route path="/signout" component={Signout}/>
             {/* <Route path="/policy" component={Policy}/> */}
             <ProtectedRoute path="/list" component={ListStuff}/>
+            <ProtectedRoute path="/Edit-My-Profile" component={EditMyProfile}/>
             <ProtectedRoute path="/planning-tabs" component={PlanningTabs}/>
+            <ProtectedRoute path="/My-Profile" component={MyProfile}/>
             <ProtectedRoute path="/spending" component={SpendingPage}/>
             <ProtectedRoute path="/planning-item/:_id" component={EditPlanning}/>
             <ProtectedRoute path="/spending-item/:_id" component={EditSpending}/>

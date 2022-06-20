@@ -6,7 +6,15 @@ import { Users } from './UserCollection';
 
 class UserProfileCollection extends BaseProfileCollection {
   constructor() {
-    super('UserProfile', new SimpleSchema({}));
+    super('UserProfile', new SimpleSchema({
+      email: String,
+      firstName: String,
+      lastName: String,
+      verification: {
+        type: Boolean,
+        defaultValue: false,
+      },
+    }));
   }
 
   /**
@@ -16,13 +24,13 @@ class UserProfileCollection extends BaseProfileCollection {
    * @param firstName The first name.
    * @param lastName The last name.
    */
-  define({ email, firstName, lastName, password }) {
+  define({ email, firstName, lastName, password, verification }) {
     if (Meteor.isServer) {
       const username = email;
-      const user = this.findOne({ email, firstName, lastName });
+      const user = this.findOne({ email, firstName, lastName, verification });
       if (!user) {
         const role = ROLE.USER;
-        const profileID = this._collection.insert({ email, firstName, lastName, userID: this.getFakeUserId(), role });
+        const profileID = this._collection.insert({ email, firstName, lastName, verification, userID: this.getFakeUserId(), role });
         const userID = Users.define({ username, role, password });
         this._collection.update(profileID, { $set: { userID } });
         return profileID;
@@ -38,7 +46,7 @@ class UserProfileCollection extends BaseProfileCollection {
    * @param firstName new first name (optional).
    * @param lastName new last name (optional).
    */
-  update(docID, { firstName, lastName }) {
+  update(docID, { firstName, lastName, verification }) {
     this.assertDefined(docID);
     const updateData = {};
     if (firstName) {
@@ -46,6 +54,9 @@ class UserProfileCollection extends BaseProfileCollection {
     }
     if (lastName) {
       updateData.lastName = lastName;
+    }
+    if (verification) {
+      updateData.verification = verification;
     }
     this._collection.update(docID, { $set: updateData });
   }
@@ -98,7 +109,8 @@ class UserProfileCollection extends BaseProfileCollection {
     const email = doc.email;
     const firstName = doc.firstName;
     const lastName = doc.lastName;
-    return { email, firstName, lastName };
+    const verification = doc.verification;
+    return { email, firstName, lastName, verification };
   }
 }
 
