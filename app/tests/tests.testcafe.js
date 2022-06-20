@@ -1,5 +1,5 @@
 // import { Selector, t } from 'testcafe';
-import { manageDatabasePage, signOutPage } from './simple.page';
+import { signOutPage } from './simple.page';
 import { signInPage } from './signin.page';
 import { navBar } from './navbar.component';
 import { signUpPage } from './signup.page';
@@ -67,6 +67,6 @@ test('Test that admin pages show up', async () => {
   // await editStuffPage.isDisplayed();
   // await navBar.gotoListStuffAdminPage();
   // await listStuffAdminPage.isDisplayed();
-  await navBar.gotoManageDatabasePage();
-  await manageDatabasePage.isDisplayed();
+  // await navBar.gotoManageDatabasePage();
+  // await manageDatabasePage.isDisplayed();
 });
