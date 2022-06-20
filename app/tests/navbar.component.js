@@ -62,12 +62,12 @@ class NavBar {
     await t.click(`#${COMPONENT_IDS.NAVBAR_LIST_STUFF_ADMIN}`);
   }
 
-  /** Go to the manage database page. Must be adimin. */
-  async gotoManageDatabasePage() {
-    await t.expect(Selector(`#${COMPONENT_IDS.NAVBAR_CURRENT_USER}`).exists).ok();
-    await t.click(`#${COMPONENT_IDS.NAVBAR_MANAGE_DROPDOWN}`);
-    await t.click(`#${COMPONENT_IDS.NAVBAR_MANAGE_DROPDOWN_DATABASE}`);
-  }
+  // /** Go to the manage database page. Must be adimin. */
+  // async gotoManageDatabasePage() {
+  //   await t.expect(Selector(`#${COMPONENT_IDS.NAVBAR_CURRENT_USER}`).exists).ok();
+  //   await t.click(`#${COMPONENT_IDS.NAVBAR_MANAGE_DROPDOWN}`);
+  //   await t.click(`#${COMPONENT_IDS.NAVBAR_MANAGE_DROPDOWN_DATABASE}`);
+  // }
 }
 
 export const navBar = new NavBar();

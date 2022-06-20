@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Image, Header, Button } from 'semantic-ui-react';
+import { Grid, Image, Header, Button, Container } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
 import { PAGE_IDS } from '../utilities/PageIDs';
@@ -14,12 +14,14 @@ const Landing = () => {
         <Header style={{ color: 'rgb(44, 62, 80)' }} as ="h2" className="landing">Meet the World&apos;s Easiest Financial Ledger!<br/>
       Here is a personal budget tracker, UHBadger!!</Header>
       </Grid.Column>
-      <div>
-        {Meteor.userId() === null && <Grid.Column>
-          <Button content='Login' color='blue' as={NavLink} exact to="/signin"/>
-          <Button content='Register' color='blue' as={NavLink} exact to="/signup"/>
-        </Grid.Column>}
-      </div>
+      <Container>
+        <div>
+          {Meteor.userId() === null && <Grid.Column>
+            <Button content='Login' color='blue' as={NavLink} exact to="/signin"/>
+            <Button content='Register' color='blue' as={NavLink} exact to="/signup"/>
+          </Grid.Column>}
+        </div>
+      </Container>
     </Grid>
   );
 };
