@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Redirect } from 'react-router-dom';
 import { Card, Container, Grid, Header, Loader, Icon, Segment } from 'semantic-ui-react';
-import { AutoForm, ErrorsField, SubmitField, TextField } from 'uniforms-semantic';
+import { AutoForm, BoolField, ErrorsField, SubmitField, TextField } from 'uniforms-semantic';
 import { Meteor } from 'meteor/meteor';
 import { updateMethod } from '../../api/base/BaseCollection.methods';
 import { PAGE_IDS } from '../utilities/PageIDs';
@@ -18,10 +18,10 @@ const EditMyProfile = ({ myProfile, ready, location }) => {
 
   const submit = (data) => {
 
-    const { firstName, lastName, _id } = data;
+    const { firstName, lastName, verification, _id } = data;
     const collectionName = UserProfiles.getCollectionName();
-    const updateData = { id: _id, firstName, lastName };
-    updateMethod.callPromise({ collectionName, updateData })
+    const updateData = { id: _id, firstName, lastName, verification };
+    updateMethod.callPromise({ collectionName, updateData, verification })
       .catch(error => swal('Error', error.message, 'error'))
       .then(() => swal('Success', 'information updated successfully', 'success'));
     setRedirectToReferer(true);
@@ -46,20 +46,25 @@ const EditMyProfile = ({ myProfile, ready, location }) => {
           <div>
             <AutoForm schema={bridge} onSubmit={data => submit(data)} model={myProfile}>
               <Segment>
-                <Card fluid color='yellow'>
-                  <Card.Content>
-                    <Card.Header>
-                      <Icon name='pencil alternate'/>
+                <Card centered>
+                  <Card.Content fluid color='yellow' basic>
+                    <Card.Content>
+                      <Card.Header>
+                        <Icon name='pencil alternate'/>
                       General
-                    </Card.Header>
+                      </Card.Header>
+                    </Card.Content>
+                    <TextField label='First Name' name='firstName'/>
+                    <TextField label='Last Name' name='lastName'/>
+                    <Card.Description>
+                    if you want to delete your account, check the verification check box.
+                    The Admin will delete your account as soon as possible.
+                    </Card.Description>
+                    <BoolField lable= 'Verification' name='verification'/>
                   </Card.Content>
-                  <TextField label='First Name' name='firstName'/>
-                  <TextField label='Last Name' name='lastName'/>
-                  <Card.Content>
-                  </Card.Content>
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
                 </Card>
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
               </Segment>
             </AutoForm>
           </div>

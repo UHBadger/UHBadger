@@ -17,14 +17,14 @@ const MyProfile = ({ ready, userProfile }) => ((ready) ? (
           {userProfile.firstName} {userProfile.lastName}
         </Card.Header>
         <Card.Meta>{userProfile.email}</Card.Meta>
+        <Card.Description>
+          if you want to <strong>delete you account or edit you profile</strong>, please click Manage Account Button.
+        </Card.Description>
       </Card.Content>
       <Card.Content extra>
         <div className='ui two buttons'>
           <Button basic color='green'>
-            <Link to = "/Edit-My-Profile">Edit</Link>
-          </Button>
-          <Button basic color= 'red'>
-             Delete
+            <Link to = "/Edit-My-Profile">Manage Account</Link>
           </Button>
         </div>
       </Card.Content>
