@@ -18,7 +18,8 @@ const NavBar = ({ currentUser }) => {
       </Menu.Item>
       {Roles.userIsInRole(Meteor.userId(), [ROLE.USER]) ? (
         [<Menu.Item id={COMPONENT_IDS.NAVBAR_SPENDING_PAGE} as={NavLink} activeClassName="active" exact to="/spending" key='spending'>Spending</Menu.Item>,
-          <Menu.Item id={COMPONENT_IDS.NAVBAR_PLANNING_PAGE} as={NavLink} activeClassName="active" exact to="/planning-tabs" key='planning'>Planning</Menu.Item>]
+          <Menu.Item id={COMPONENT_IDS.NAVBAR_PLANNING_PAGE} as={NavLink} activeClassName="active" exact to="/planning-tabs" key='planning'>Planning</Menu.Item>,
+          <Menu.Item id={COMPONENT_IDS.NAVBAR_MANAGE_MY_ACCOUNT} as={NavLink} activeClassName="active" exact to="/My-Profile" key='account'>Manage My Account</Menu.Item>]
       ) : ''}
       {currentUser ? (
         [<Menu.Item id={COMPONENT_IDS.NAVBAR_ADD_STUFF} as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
