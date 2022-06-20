@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Redirect } from 'react-router-dom';
 import { Card, Container, Grid, Header, Loader, Icon, Segment } from 'semantic-ui-react';
-import { AutoForm, BoolField, ErrorsField, SubmitField, TextField } from 'uniforms-semantic';
+import { AutoForm, ErrorsField, SubmitField, TextField } from 'uniforms-semantic';
 import { Meteor } from 'meteor/meteor';
 import { updateMethod } from '../../api/base/BaseCollection.methods';
 import { PAGE_IDS } from '../utilities/PageIDs';
@@ -56,11 +56,6 @@ const EditMyProfile = ({ myProfile, ready, location }) => {
                     </Card.Content>
                     <TextField label='First Name' name='firstName'/>
                     <TextField label='Last Name' name='lastName'/>
-                    <Card.Description>
-                    if you want to delete your account, check the verification check box.
-                    The Admin will delete your account as soon as possible.
-                    </Card.Description>
-                    <BoolField lable= 'Verification' name='verification'/>
                   </Card.Content>
                   <SubmitField value='Submit'/>
                   <ErrorsField/>
