@@ -129,7 +129,7 @@ Hansen Cabanero:
     - Edit Spending
     - Delete Spending
   - Next:
-    - not sure now 
+    - Analyze User Spending
       
 Cheolhoon Choi:
   - New completions:
