@@ -2,6 +2,9 @@ import React from 'react';
 import { Card, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
+import swal from 'sweetalert';
+import { removeItMethod } from '../../api/base/BaseCollection.methods';
+import { Spending } from '../../api/stuff/SpendingCollection';
 
 /** Renders a single row in the List planning card * */
 const SpendingItem = ({ spending }) => (
@@ -16,14 +19,35 @@ const SpendingItem = ({ spending }) => (
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
-      <div className='ui two buttons'>
+      <div>
         <Link to={`/spending-item/${spending._id}`}>
           <Button basic color='green'>
             Edit
           </Button>
         </Link>
-        <Button basic color='red'>
-            Delete
+        <Button basic color='red' onClick={() => {
+          swal({
+            title: 'Are you sure?',
+            text: 'Once deleted, you will not be able to recover this Spending',
+            icon: 'warning',
+            buttons: true,
+            dangerMode: true,
+          })
+            .then((willDelete) => {
+              if (willDelete) {
+                const collectionName = Spending.getCollectionName();
+                const instance = spending._id;
+                removeItMethod.callPromise({ collectionName, instance })
+                  .catch(error => swal('Error', error.message, 'error'))
+                  .then(() => {
+                    swal('Success', 'Spending has been deleted!', 'success');
+                  });
+              } else {
+                swal("Don't Worry", 'Your spending data is safe!', 'info');
+              }
+            });
+        }}>
+          Delete
         </Button>
       </div>
     </Card.Content>
