@@ -6,14 +6,14 @@ import swal from 'sweetalert';
 import { removeItMethod } from '../../api/base/BaseCollection.methods';
 import { Spending } from '../../api/stuff/SpendingCollection';
 
-/** Renders a single row in the List spending card * */
+/** Renders a single row in the List planning card * */
 const SpendingItem = ({ spending }) => (
   <Card color='teal'>
     <Card.Content>
       <Card.Header>{spending.title}</Card.Header>
       <Card.Meta>{spending.date.toLocaleDateString('en-US')}</Card.Meta>
       <Card.Meta>Category: {spending.category}</Card.Meta>
-      <Card.Meta>Money Amount: <strong>${spending.amount}</strong></Card.Meta>
+      <Card.Meta>Money Spent: <strong>${spending.amount}</strong></Card.Meta>
       <Card.Description>
         {spending.description}
       </Card.Description>
