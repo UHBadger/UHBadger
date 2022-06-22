@@ -8,6 +8,7 @@ export const PAGE_IDS = {
   EDIT_STUFF: 'edit-stuff',
   LANDING: 'landing',
   LIST_STUFF: 'list-stuff',
+  DELETE_USER: 'delete-user',
   LIST_PLANNINGS: 'list-plannings',
   LIST_SPENDING: 'list-spending',
   LIST_STUFF_ADMIN: 'list-stuff-admin',
