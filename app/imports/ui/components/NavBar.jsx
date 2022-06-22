@@ -23,8 +23,7 @@ const NavBar = ({ currentUser }) => {
       // <Menu.Item id={COMPONENT_IDS.NAVBAR_MANAGE_MY_ACCOUNT} as={NavLink} activeClassName="active" exact to="/My-Profile" key='account'>Manage My Account</Menu.Item>]
       ) : ''}
       {Roles.userIsInRole(Meteor.userId(), [ROLE.ADMIN]) ? (
-        [<Menu.Item id={COMPONENT_IDS.NAVBAR_DELETE_USER} as={NavLink} activeClassName="active" exact to="/admin-delete-user" key='delete'>Delete User</Menu.Item>,
-          <Menu.Item id={COMPONENT_IDS.NAVBAR_POLICY} as={NavLink} activeClassName="active" exact to="/policy" key='policy '>Policy</Menu.Item>,
+        [<Menu.Item id={COMPONENT_IDS.NAVBAR_POLICY} as={NavLink} activeClassName="active" exact to="/policy" key='policy '>Policy</Menu.Item>,
           <Menu.Item id={COMPONENT_IDS.NAVBAR_LIST_STUFF_ADMIN} as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>]
       ) : ''}
       <Menu.Item position="right">
