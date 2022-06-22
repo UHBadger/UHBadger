@@ -10,6 +10,8 @@
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.18.3",
+    "chart.js": "^3.8.0",
+    "chartjs-plugin-datalabels": "^2.0.0",
     "classnames": "^2.3.1",
     "core-js": "^3.16.0",
     "faker": "^5.5.3",
@@ -19,6 +21,7 @@
     "meteor-node-stubs": "^1.1.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
+    "react-chartjs-2": "^4.2.0",
     "react-dom": "^17.0.2",
     "react-router": "^5.3.3",
     "react-router-dom": "^5.3.3",
