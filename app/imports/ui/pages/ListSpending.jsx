@@ -78,30 +78,27 @@ const ListSpending = ({ ready, spending }) => {
   const totalMiscRed = totalMiscellaneous.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
 
   const data = {
-    labels: ['Total Expenditure', 'Income', 'Home', 'Food', 'Transportation', 'Entertainment', 'Miscellaneous'],
+    labels: ['Income', 'Home', 'Food', 'Transportation', 'Entertainment', 'Miscellaneous'],
     datasets: [
       {
         label: 'Money',
         backgroundColor: [
-          '#B21F00',
           '#C9DE00',
           '#2FDE00',
           '#00A6B4',
           '#6800B4',
           '#f5b942',
-          '#e63ce3',
+          '#B21F00',
         ],
         hoverBackgroundColor: [
-          '#501800',
           '#4B5000',
           '#175000',
           '#003350',
           '#35014F',
           '#966606',
-          '#730371',
+          '#501800',
         ],
         data: [
-          totalRed,
           totalIncomeRed,
           totalHomeRed,
           totalFoodRed,
@@ -184,7 +181,7 @@ const ListSpending = ({ ready, spending }) => {
                 display: function (context) {
                   const index = context.dataIndex;
                   const value = context.dataset.data[index];
-                  return value > 0 && ((context.dataset.data[context.dataIndex] / totalRed) * 100).toFixed(2) > 6.5;
+                  return value > 0 && ((context.dataset.data[context.dataIndex] / totalRed) * 100).toFixed(2) > 3;
                 },
               },
             },
