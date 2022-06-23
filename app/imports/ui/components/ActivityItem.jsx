@@ -189,10 +189,9 @@ ActivityItem.propTypes = {
 };
 
 // withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
-export default withTracker((planning) => {
+export default withTracker(() => {
   // Get access to spending documents.
   const subscription = Spending.subscribeSpending();
-  console.log(planning.planning.startTime);
   // Determine if the subscription is ready
   const ready = subscription.ready();
   const spending = Spending.find({}, { sort: { title: 1 } }).fetch();
