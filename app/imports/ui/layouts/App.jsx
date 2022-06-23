@@ -25,7 +25,6 @@ import EditPlanning from '../pages/EditPlanning';
 import MyProfile from '../pages/MyProfile';
 import EditMyProfile from '../pages/EditMyProfile';
 import AdminDeleteUser from '../pages/AdimDeleteUser';
-import Activities from '../pages/Activities';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -42,7 +41,6 @@ class App extends React.Component {
             {/* <Route path="/policy" component={Policy}/> */}
             <ProtectedRoute path="/list" component={ListStuff}/>
             <ProtectedRoute path="/Edit-My-Profile" component={EditMyProfile}/>
-            <ProtectedRoute path="/activities/:_id" component={Activities}/>
             <ProtectedRoute path="/planning-tabs" component={PlanningTabs}/>
             <ProtectedRoute path="/My-Profile" component={MyProfile}/>
             <ProtectedRoute path="/spending" component={SpendingPage}/>
@@ -53,7 +51,6 @@ class App extends React.Component {
             <ProtectedRoute path="/policy" component={Policy}/>
             <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
             <AdminProtectedRoute path="/admin-delete-user" component={AdminDeleteUser}/>
-
             {/* <AdminProtectedRoute path="/manage-database" component={ManageDatabase}/> */}
             <Route component={NotFound}/>
           </Switch>
