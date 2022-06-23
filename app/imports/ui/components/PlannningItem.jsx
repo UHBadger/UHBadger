@@ -16,8 +16,6 @@ const PlanningItem = ({ planning }) => (
       <Card.Description>
         {planning.description}
       </Card.Description>
-      <br/>
-      <Link to = {`/activities/${planning._id}`}>View Activities, and Spend Analyzer</Link>
     </Card.Content>
     <Card.Content extra>
       <div className='ui two buttons'>
