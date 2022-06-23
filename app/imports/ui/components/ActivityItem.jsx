@@ -110,7 +110,7 @@ const ActivityItem = ({ ready, planning, spending }) => {
           const datasets = ctx.chart.data.datasets;
           if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
             const sum = datasets[0].data.reduce((a, b) => a + b, 0);
-            return `${Math.round((value / sum) * 100)}%`;
+            return `${((value / sum) * 100).toFixed(1)}%`;
           }
           return percentage;
 
