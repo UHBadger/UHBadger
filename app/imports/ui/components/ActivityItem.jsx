@@ -131,7 +131,7 @@ const ActivityItem = ({ ready, planning, spending }) => {
   };
   return ((ready) ? (
     <Container>
-      <Header as="h1" textAlign="center" color = 'yellow' style={ { paddingTop: '20px', paddingBottom: '30px' }}> Activities History and Analyze </Header>
+      <Header as="h1" textAlign="center" color = 'yellow' style={ { paddingTop: '20px', paddingBottom: '30px' }}> Activity history and analysis </Header>
       { length !== 0 ?
         <Segment>
           <Grid>
