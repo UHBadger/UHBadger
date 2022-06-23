@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container, Header, Loader, Message, Segment, Statistic } from 'semantic-ui-react';
+import { Card, Container, Grid, Header, Loader, Message, Segment, Statistic } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Pie } from 'react-chartjs-2';
@@ -90,19 +90,34 @@ const ActivityItem = ({ ready, planning, spending }) => {
           'rgba(153, 102, 255, 1)',
         ],
         data: [
-          // eslint-disable-next-line no-mixed-operators
-          (totalHome / total * 100).toFixed(2),
-          // eslint-disable-next-line no-mixed-operators
-          (totalFood / total * 100).toFixed(2),
-          // eslint-disable-next-line no-mixed-operators
-          (totalTrans / total * 100).toFixed(2),
-          // eslint-disable-next-line no-mixed-operators
-          (totalEnter / total * 100).toFixed(2),
-          // eslint-disable-next-line no-mixed-operators
-          (totalMisc / total * 100).toFixed(2),
+          totalHome,
+          totalFood,
+          totalTrans,
+          totalEnter,
+          totalMisc,
         ],
       },
     ],
+  };
+  let percentage;
+  const options = {
+    tooltips: {
+      enabled: false,
+    },
+    plugins: {
+      datalabels: {
+        formatter: (value, ctx) => {
+          const datasets = ctx.chart.data.datasets;
+          if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+            const sum = datasets[0].data.reduce((a, b) => a + b, 0);
+            return `${Math.round((value / sum) * 100)}%`;
+          }
+          return percentage;
+
+        },
+        color: '#fff',
+      },
+    },
   };
   const relation = () => {
     if (planning.budget > total) {
@@ -116,55 +131,63 @@ const ActivityItem = ({ ready, planning, spending }) => {
   };
   return ((ready) ? (
     <Container>
-      <Header as="h1" textAlign="center" style={ { paddingTop: '20px', paddingBottom: '30px' }}> Activities </Header>
+      <Header as="h1" textAlign="center" color = 'yellow' style={ { paddingTop: '20px', paddingBottom: '30px' }}> Activities History and Analyze </Header>
       { length !== 0 ?
         <Segment>
-          <Statistic.Group size='tiny'>
-            <Statistic color='red'>
-              <Statistic.Value>${planning.budget}</Statistic.Value>
-              <Statistic.Label>Planning Budget</Statistic.Label>
-            </Statistic>
-            <Statistic>
-              <Statistic.Value>{relation()}</Statistic.Value>
-              <Statistic.Label>Relation</Statistic.Label>
-            </Statistic>
-            <Statistic>
-              <Statistic.Value>${total}</Statistic.Value>
-              <Statistic.Label>TOTAL EXPENDITURES</Statistic.Label>
-            </Statistic>
-            <Statistic color='orange'>
-              <Statistic.Value>${totalIncome}</Statistic.Value>
-              <Statistic.Label>Total Income</Statistic.Label>
-            </Statistic>
-            <Statistic color='yellow'>
-              <Statistic.Value>${totalHome}</Statistic.Value>
-              <Statistic.Label>Home Expenditures</Statistic.Label>
-            </Statistic>
-            <Statistic color='purple'>
-              <Statistic.Value>${totalFood}</Statistic.Value>
-              <Statistic.Label>Food Expenditures</Statistic.Label>
-            </Statistic>
-            <Statistic color='olive'>
-              <Statistic.Value>${totalTrans}</Statistic.Value>
-              <Statistic.Label>TRANSPORTATION EXPENDITURES</Statistic.Label>
-            </Statistic>
-            <Statistic color='green'>
-              <Statistic.Value>${totalEnter}</Statistic.Value>
-              <Statistic.Label>Entertainment Expenditures</Statistic.Label>
-            </Statistic>
-            <Statistic color='teal'>
-              <Statistic.Value>${totalMisc}</Statistic.Value>
-              <Statistic.Label>Miscellaneous Expenditures</Statistic.Label>
-            </Statistic>
-          </Statistic.Group>
-          <br/>
-          <Pie data={data}/>
-          <br/>
-          <Header as="h1" textAlign="center" color = 'yellow' style={ { paddingTop: '20px', paddingBottom: '30px' }}> Activities Detail</Header>
+          <Grid>
+            <Grid.Row>
+              <Grid.Column width={8}>
+                <Statistic.Group size='tiny'>
+                  <Statistic color='red'>
+                    <Statistic.Value>${planning.budget}</Statistic.Value>
+                    <Statistic.Label>Planning Budget</Statistic.Label>
+                  </Statistic>
+                  <Statistic>
+                    <Statistic.Value>{relation()}</Statistic.Value>
+                    <Statistic.Label>Relation</Statistic.Label>
+                  </Statistic>
+                  <Statistic>
+                    <Statistic.Value>${total}</Statistic.Value>
+                    <Statistic.Label>TOTAL EXPENDITURES</Statistic.Label>
+                  </Statistic>
+                  <Statistic color='orange'>
+                    <Statistic.Value>${totalIncome}</Statistic.Value>
+                    <Statistic.Label>Total Income</Statistic.Label>
+                  </Statistic>
+                  <Statistic color='yellow'>
+                    <Statistic.Value>${totalHome}</Statistic.Value>
+                    <Statistic.Label>Home Expenditures</Statistic.Label>
+                  </Statistic>
+                  <Statistic color='purple'>
+                    <Statistic.Value>${totalFood}</Statistic.Value>
+                    <Statistic.Label>Food Expenditures</Statistic.Label>
+                  </Statistic>
+                  <Statistic color='olive'>
+                    <Statistic.Value>${totalTrans}</Statistic.Value>
+                    <Statistic.Label>TRANSPORTATION EXPENDITURES</Statistic.Label>
+                  </Statistic>
+                  <Statistic color='green'>
+                    <Statistic.Value>${totalEnter}</Statistic.Value>
+                    <Statistic.Label>Entertainment Expenditures</Statistic.Label>
+                  </Statistic>
+                  <Statistic color='teal'>
+                    <Statistic.Value>${totalMisc}</Statistic.Value>
+                    <Statistic.Label>Miscellaneous Expenditures</Statistic.Label>
+                  </Statistic>
+                </Statistic.Group>
+                <br/>
+              </Grid.Column>
+              <Grid.Column width={8}>
+                <Pie data={data} options={options}/>
+                <br/>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
           <Card.Group>
             {activities.map((activity) => <SpendingItem key={activity._id} spending={activity} />)}
           </Card.Group>
-        </Segment> :
+        </Segment>
+        :
         <Message positive>
           <Message.Header>You do not  have any activity for now </Message.Header>
           <p>Good job!!!</p>
