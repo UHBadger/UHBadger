@@ -6,7 +6,7 @@ import { PAGE_IDS } from '../utilities/PageIDs';
 import { Plannings } from '../../api/planning/PlanningCollection';
 import PlanningItem from '../components/PlannningItem';
 
-/** Renders all of the plannings documents. Use <PlanningItem> to render each row. */
+/** Renders all plannings documents. Use <PlanningItem> to render each row. */
 const ListPlannings = ({ ready, plannings }) => ((ready) ? (
   <Container id={PAGE_IDS.LIST_PLANNINGS}>
     <Header as="h2" textAlign="center">List Plannings</Header>
