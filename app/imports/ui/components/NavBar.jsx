@@ -40,8 +40,7 @@ const NavBar = ({ currentUser }) => {
             <Dropdown.Menu>
               <Dropdown.Item id={COMPONENT_IDS.NAVBAR_SIGN_OUT} icon="sign out" text="Sign Out" as={NavLink} exact to="/signout" />
               <div className="divider"></div>
-              {Roles.userIsInRole(Meteor.userId(), [ROLE.USER]) ?
-                <Dropdown.Item id={COMPONENT_IDS.NAVBAR_MANAGE_MY_ACCOUNT} icon="edit" text="Manage My Account" as={NavLink} activeClassName="active" exact to="/My-Profile" key='account' /> : ''}
+              <Dropdown.Item id={COMPONENT_IDS.NAVBAR_MANAGE_MY_ACCOUNT} icon="edit" text="Manage My Account" as={NavLink} activeClassName="active" exact to="/My-Profile" key='account' />
             </Dropdown.Menu>
           </Dropdown>
         )}
