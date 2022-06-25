@@ -52,22 +52,22 @@ const EditSpending = ({ doc, ready, location }) => {
               <Segment stacked basic>
                 <Card fluid>
                   <Card.Content>
-                    <TextField label='Title' name='title' />
+                    <TextField label='Title' name='title' id='edit-spending-title' />
                   </Card.Content>
                   <Card.Content>
-                    <LongTextField label='Description' name='description' />
+                    <LongTextField label='Description' name='description' id='edit-spending-description' />
                   </Card.Content>
                   <Card.Content>
-                    <NumField label='Amount' name='amount' />
+                    <NumField label='Amount' name='amount' id='edit-spending-amount' />
                   </Card.Content>
                   <Card.Content>
-                    <TextField label='Date' name='date' />
+                    <TextField label='Date' name='date' id='edit-spending-date' />
                   </Card.Content>
                   <Card.Content>
-                    <RadioField label='Category' name='category' />
+                    <RadioField label='Category' name='category' id='edit-spending-category' />
                   </Card.Content>
                 </Card>
-                <SubmitField value='Submit'/>
+                <SubmitField value='Submit' id='edit-spending-submit' />
                 <ErrorsField/>
               </Segment>
             </AutoForm>

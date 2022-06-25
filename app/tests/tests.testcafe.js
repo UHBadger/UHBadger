@@ -4,6 +4,8 @@ import { signInPage } from './signin.page';
 import { navBar } from './navbar.component';
 import { signUpPage } from './signup.page';
 import { landingPage } from './landing.page';
+import { spendingPage } from './spending.page';
+// import { policyPage } from './policy.page';
 // import { COMPONENT_IDS } from '../imports/ui/utilities/ComponentIDs';
 
 /* global fixture:false, test:false */
@@ -57,6 +59,8 @@ test('Test that admin pages show up', async () => {
   await navBar.gotoSigninPage();
   await signInPage.signin(adminCredentials.username, adminCredentials.password);
   await navBar.isLoggedIn(adminCredentials.username);
+  await navBar.logout();
+  await signOutPage.isDisplayed();
   // await navBar.gotoAddStuffPage();
   // await addStuffPage.isDisplayed();
   // await navBar.gotoListStuffPage();
@@ -69,4 +73,67 @@ test('Test that admin pages show up', async () => {
   // await listStuffAdminPage.isDisplayed();
   // await navBar.gotoManageDatabasePage();
   // await manageDatabasePage.isDisplayed();
+  await navBar.logout();
+  await signOutPage.isDisplayed();
 });
+
+test('Test that add spending page works', async () => {
+  await navBar.gotoSigninPage();
+  await signInPage.signin(credentials.username, credentials.password);
+  await navBar.isLoggedIn(credentials.username);
+  await navBar.gotoSpendingPage();
+  await spendingPage.isDisplayed();
+  await spendingPage.addSpending();
+  await navBar.logout();
+  await signOutPage.isDisplayed();
+});
+
+test('Test that list spending page shows up', async () => {
+  await navBar.gotoSigninPage();
+  await signInPage.signin(credentials.username, credentials.password);
+  await navBar.isLoggedIn(credentials.username);
+  await navBar.gotoSpendingPage();
+  await spendingPage.isDisplayed();
+  await navBar.logout();
+  await signOutPage.isDisplayed();
+});
+
+test('Test that edit spending works', async () => {
+  await navBar.gotoSigninPage();
+  await signInPage.signin(credentials.username, credentials.password);
+  await navBar.isLoggedIn(credentials.username);
+  await navBar.gotoSpendingPage();
+  await spendingPage.isDisplayed();
+  await spendingPage.editSpending();
+  await navBar.logout();
+  await signOutPage.isDisplayed();
+});
+
+test('Test that delete spending works', async () => {
+  await navBar.gotoSigninPage();
+  await signInPage.signin(credentials.username, credentials.password);
+  await navBar.isLoggedIn(credentials.username);
+  await navBar.gotoSpendingPage();
+  await spendingPage.isDisplayed();
+  await spendingPage.deleteSpending();
+  await navBar.logout();
+  await signOutPage.isDisplayed();
+});
+
+// test('Test that add planning page works', async () => {
+//   await navBar.gotoSigninPage();
+//   await signInPage.signin(credentials.username, credentials.password);
+//   await navBar.isLoggedIn(credentials.username);
+//   await navBar.gotoPlanningPage();
+//   await navBar.logout();
+//   await signOutPage.isDisplayed();
+// });
+
+// test('Test that policy page shows up', async () => {
+//   await navBar.gotoSigninPage();
+//   await signInPage.signin(credentials.username, credentials.password);
+//   await navBar.isLoggedIn(credentials.username);
+//   await navBar.gotoPolicyPage();
+//   await navBar.logout();
+//   await signOutPage.isDisplayed();
+// });
