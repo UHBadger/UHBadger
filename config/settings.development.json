@@ -17,7 +17,9 @@
     {"title":"save money for house", "budget": 5000, "startTime": "01/01/2000", "endTime": "09/01/2025", "description": "hope to save at least $1000000!", "owner": "john@foo.com" }
   ],
   "defaultSpending": [
-    {"title": "Nintendo Switch", "description":  "Bought a Nintendo Switch", "amount": 399, "category": "entertainment", "date": "12/16/2021", "owner": "john@foo.com"}
+    {"title": "Nintendo Switch", "description":  "Bought a Nintendo Switch", "amount": 399, "category": "entertainment", "date": "12/16/2021", "owner": "john@foo.com"},
+    {"title": "Microwave", "description":  "Bought a microwave", "amount": 500, "category": "home", "date": "12/16/2021", "owner": "john@foo.com"},
+    {"title": "Dinner", "description":  "Had dinner with friends", "amount": 200, "category": "food", "date": "12/16/2021", "owner": "john@foo.com"}
   ],
   "public": {
     "development": true

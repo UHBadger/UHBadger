@@ -68,10 +68,10 @@ class NavBar {
     await t.click(`#${COMPONENT_IDS.NAVBAR_POLICY}`);
   }
 
-  /** Go to the list stuff admin page. */
-  async gotoListStuffAdminPage() {
+  /** Go to the delete user admin page. */
+  async gotoAdminDeleteUserPage() {
     await t.expect(Selector(`#${COMPONENT_IDS.NAVBAR_CURRENT_USER}`).exists).ok();
-    await t.click(`#${COMPONENT_IDS.NAVBAR_LIST_STUFF_ADMIN}`);
+    await t.click(`#${COMPONENT_IDS.NAVBAR_DELETE_USER}`);
   }
 
   // /** Go to the manage database page. Must be adimin. */

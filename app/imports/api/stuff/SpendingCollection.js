@@ -149,19 +149,20 @@ class SpendingCollection extends BaseCollection {
     this.assertRole(userId, [ROLE.ADMIN, ROLE.USER]);
   }
 
-/*  /!**
-   * Returns an object representing the definition of docID in a format appropriate to the restoreOne or define function.
-   * @param docID
-   * @return {{owner: (*|number), condition: *, quantity: *, name}}
-   *!/
-  dumpOne(docID) {
-    const doc = this.findDoc(docID);
-    const name = doc.name;
-    const quantity = doc.quantity;
-    const condition = doc.condition;
-    const owner = doc.owner;
-    return { name, quantity, condition, owner };
-  } */
+  // /**
+  //  * Returns an object representing the definition of docID in a format appropriate to the restoreOne or define function.
+  //  * @param docID
+  //  * @return {{owner: (*|number), condition: *, quantity: *, name}}
+  //  */
+  // dumpOne(docID) {
+  //   const doc = this.findDoc(docID);
+  //   const title = doc.title;
+  //   const description = doc.description;
+  //   const amount = doc.amount;
+  //   const category = doc.category;
+  //   const date = doc.date;
+  //   return { title, description, amount, category, date };
+  // }
 }
 
 /**

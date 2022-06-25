@@ -5,6 +5,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { Plannings } from '../../api/planning/PlanningCollection';
 import AddPlanning from './AddPlanning';
 import ListPlannings from './ListPlannings';
+import { PAGE_IDS } from '../utilities/PageIDs';
 
 const panes = [
   // eslint-disable-next-line react/display-name
@@ -14,7 +15,7 @@ const panes = [
 ];
 
 const PlanningPage = ({ ready }) => ((ready) ? (
-  <Container className="spending">
+  <Container id={PAGE_IDS.PLANNING} className="spending">
     <div>
       <h1 className="ui center aligned header">
        Planning Page
