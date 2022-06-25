@@ -58,14 +58,14 @@ const EditPlanning = ({ doc, ready, location }) => {
                     </Card.Header>
                   </Card.Content>
                   <Card.Content>
-                    <TextField name='title' />
-                    <NumField name='budget' />
-                    <TextField name='startTime'placeholder = 'mm/dd/yyyy'/>
-                    <TextField name='endTime' placeholder='mm/dd/yyyy'/>
-                    <LongTextField name= 'description'/>
+                    <TextField id='edit-planning-title' name='title' />
+                    <NumField id='edit-planning-budget' name='budget' />
+                    <TextField id='edit-planning-start' name='startTime' placeholder = 'mm/dd/yyyy'/>
+                    <TextField id='edit-planning-end' name='endTime' placeholder='mm/dd/yyyy'/>
+                    <LongTextField id='edit-planning-description' name= 'description'/>
                   </Card.Content>
                 </Card>
-                <SubmitField value='Submit'/>
+                <SubmitField id='edit-planning-submit' value='Submit'/>
                 <ErrorsField/>
               </Segment>
             </AutoForm>

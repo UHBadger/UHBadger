@@ -72,14 +72,14 @@ const AddPlanning = () => {
                   </Card.Header>
                 </Card.Content>
                 <Card.Content>
-                  <TextField name='title' />
-                  <NumField name='budget' />
-                  <TextField name='startTime'placeholder = 'mm/dd/yyyy'/>
-                  <TextField name='endTime' placeholder='mm/dd/yyyy'/>
-                  <LongTextField name= 'description'/>
+                  <TextField id='planning-title' name='title' />
+                  <NumField id='planning-budget' name='budget' />
+                  <TextField id='planning-start' name='startTime'placeholder = 'mm/dd/yyyy'/>
+                  <TextField id='planning-end' name='endTime' placeholder='mm/dd/yyyy'/>
+                  <LongTextField id='planning-description' name= 'description'/>
                 </Card.Content>
               </Card>
-              <SubmitField value='Submit' />
+              <SubmitField id='planning-submit' value='Submit' />
               <ErrorsField />
             </Segment>
           </AutoForm>

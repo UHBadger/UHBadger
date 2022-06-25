@@ -21,10 +21,10 @@ const PlanningItem = ({ planning }) => (
     </Card.Content>
     <Card.Content extra>
       <div className='ui two buttons'>
-        <Button basic color='green'>
+        <Button id='edit-planning' basic color='green'>
           <Link to={`/planning-item/${planning._id}`}>Edit</Link>
         </Button>
-        <Button basic color='red' onClick={() => {
+        <Button id='delete-planning' basic color='red' onClick={() => {
           swal({
             title: 'Are you sure?',
             text: 'Once deleted, you will not be able to recover this Planning',

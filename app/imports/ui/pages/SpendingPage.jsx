@@ -5,16 +5,18 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { Spending } from '../../api/stuff/SpendingCollection';
 import AddSpending from './AddSpending';
 import ListSpending from './ListSpending';
+import { PAGE_IDS } from '../utilities/PageIDs';
+import { COMPONENT_IDS } from '../utilities/ComponentIDs';
 
 const panes = [
   // eslint-disable-next-line react/display-name
-  { menuItem: 'List Spending', render: () => <Tab.Pane><ListSpending id='list-spending'/></Tab.Pane> },
+  { menuItem: 'List Spending', render: () => <Tab.Pane id={COMPONENT_IDS.SPENDING_LIST}><ListSpending /></Tab.Pane> },
   // eslint-disable-next-line react/display-name
-  { menuItem: 'Add Spending', render: () => <Tab.Pane><AddSpending id='add-spending'/></Tab.Pane> },
+  { menuItem: 'Add Spending', render: () => <Tab.Pane id={COMPONENT_IDS.SPENDING_ADD}><AddSpending /></Tab.Pane> },
 ];
 
 const SpendingPage = ({ ready }) => ((ready) ? (
-  <Container className="spending">
+  <Container id={PAGE_IDS.SPENDING} className="spending">
     <div>
       <h1 className="ui center aligned header">
           Spending Page
