@@ -138,7 +138,32 @@ Cheolhoon Choi:
   - Next: 
     - Update tests.testcafe
     - Deployment
-
+    
+# Assignment 5: 06/21/2022 - 06/27/2022\
+## Roles and Responsibilities
+Feimei Chen:
+ - New Completions:
+   - Delete User Account(Admin)
+   - Analyze User Planning 
+   
+Hansen Cabanero:
+  - New completions:
+    - Analyze User Spending
+      
+Cheolhoon Choi:
+  - New completions:
+    - Update tests.testcafe
+    - Deployment
+## Technical Notes 
+   ### How to Install 
+## Closing Thoughts
+   ### Challenges
+   ### important achievements
+  
 ## Link
 ### GihHub Repository:
 * https://github.com/UHBadger/UHBadger
+### Documentation File
+### Release 
+### Wiki Page
+* https://github.com/UHBadger/UHBadger/wiki
