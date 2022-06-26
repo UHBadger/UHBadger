@@ -165,5 +165,6 @@ Cheolhoon Choi:
 * https://github.com/UHBadger/UHBadger
 ### Documentation File
 ### Release 
+* https://github.com/UHBadger/UHBadger/releases/tag/v1.0.0
 ### Wiki Page
 * https://github.com/UHBadger/UHBadger/wiki
