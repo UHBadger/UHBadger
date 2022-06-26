@@ -158,7 +158,7 @@ Cheolhoon Choi:
    ### How to Install 
 ## Closing Thoughts
    ### Challenges
-   ### important achievements
+   ### Important Achievements
   
 ## Link
 ### GihHub Repository:
