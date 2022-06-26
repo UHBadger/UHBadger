@@ -50,16 +50,28 @@ class NavBar {
     await t.click(`#${COMPONENT_IDS.NAVBAR_LIST_STUFF}`);
   }
 
+  /** Go to the list spending page. */
+  async gotoSpendingPage() {
+    await t.expect(Selector(`#${COMPONENT_IDS.NAVBAR_CURRENT_USER}`).exists).ok();
+    await t.click(`#${COMPONENT_IDS.NAVBAR_SPENDING_PAGE}`);
+  }
+
+  /** Go to the planning page. */
+  async gotoPlanningPage() {
+    await t.expect(Selector(`#${COMPONENT_IDS.NAVBAR_CURRENT_USER}`).exists).ok();
+    await t.click(`#${COMPONENT_IDS.NAVBAR_PLANNING_PAGE}`);
+  }
+
   /** Go to the policy page. */
   async gotoPolicyPage() {
     await t.expect(Selector(`#${COMPONENT_IDS.NAVBAR_CURRENT_USER}`).exists).ok();
     await t.click(`#${COMPONENT_IDS.NAVBAR_POLICY}`);
   }
 
-  /** Go to the list stuff admin page. */
-  async gotoListStuffAdminPage() {
+  /** Go to the delete user admin page. */
+  async gotoAdminDeleteUserPage() {
     await t.expect(Selector(`#${COMPONENT_IDS.NAVBAR_CURRENT_USER}`).exists).ok();
-    await t.click(`#${COMPONENT_IDS.NAVBAR_LIST_STUFF_ADMIN}`);
+    await t.click(`#${COMPONENT_IDS.NAVBAR_DELETE_USER}`);
   }
 
   // /** Go to the manage database page. Must be adimin. */

@@ -21,11 +21,11 @@ const SpendingItem = ({ spending }) => (
     <Card.Content extra>
       <div>
         <Link to={`/spending-item/${spending._id}`}>
-          <Button basic color='green'>
+          <Button basic color='green' id='edit-spending'>
             Edit
           </Button>
         </Link>
-        <Button basic color='red' onClick={() => {
+        <Button basic color='red' id='delete-spending' onClick={() => {
           swal({
             title: 'Are you sure?',
             text: 'Once deleted, you will not be able to recover this Spending',

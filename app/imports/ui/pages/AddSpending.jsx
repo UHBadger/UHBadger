@@ -71,14 +71,14 @@ const AddSpending = () => {
                   </Card.Header>
                 </Card.Content>
                 <Card.Content>
-                  <TextField name='title' />
-                  <NumField name='amount' />
-                  <TextField name='date' placeholder = 'mm/dd/yyyy'/>
-                  <RadioField name='category' />
-                  <LongTextField name= 'description'/>
+                  <TextField name='title' id='spending-title' />
+                  <NumField name='amount' id='spending-amount' />
+                  <TextField name='date' placeholder = 'mm/dd/yyyy' id='spending-date' />
+                  <RadioField name='category' id='spending-category' />
+                  <LongTextField name= 'description' id='spending-description' />
                 </Card.Content>
               </Card>
-              <SubmitField value='Submit' />
+              <SubmitField value='Submit' id='spending-submit' />
               <ErrorsField />
             </Segment>
           </AutoForm>

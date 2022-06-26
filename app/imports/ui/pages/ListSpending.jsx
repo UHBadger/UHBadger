@@ -165,7 +165,7 @@ const ListSpending = ({ ready, spending }) => {
                   },
                   value: {
                     formatter: function (value, context) {
-                      return '$' + context.dataset.data[context.dataIndex] + '\n' + ((context.dataset.data[context.dataIndex] / totalRed) * 100).toFixed(2) + '%';
+                      return `$${context.dataset.data[context.dataIndex]}\n${((context.dataset.data[context.dataIndex] / totalRed) * 100).toFixed(2)}%`;
                     },
                     align: 'bottom',
                     color: 'black',

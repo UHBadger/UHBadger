@@ -2,5 +2,9 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0"
+  },
+  "dependencies": {
+    "testcafe": "^1.19.0",
+    "testcafe-live": "^0.1.4"
   }
 }
