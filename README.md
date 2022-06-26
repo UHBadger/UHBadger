@@ -155,7 +155,34 @@ Cheolhoon Choi:
     - Update tests.testcafe
     - Deployment
 ## Technical Notes 
-   ### How to Install 
+   ### Installation
+
+First, [install Meteor](https://www.meteor.com/developers/install).
+
+Second, download [UHBadger](https://github.com/UHBadger/UHBadger), and request permission to gain access to UHBadger. 
+
+Third, cd into the app/ directory and install required libraries: meteor:
+
+```
+$ meteor npm install
+```
+
+ ### Running the Application
+
+After installation, you can run the application by typing:
+
+```
+$ meteor npm run start
+```
+The first time running the application will add default users: 
+
+```
+$ meteor npm run start
+
+> meteor-application-template-react@ start /Users/hanyeji/Desktop/github/UHBadger/app
+> meteor --no-release-check --exclude-archs web.browser.legacy,web.cordova --settings ../config/settings.development.json
+```
+
 ## Closing Thoughts
    ### Challenges
    ### Important Achievements
