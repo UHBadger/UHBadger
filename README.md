@@ -186,7 +186,7 @@ $ meteor npm run start
 ## Closing Thoughts
    ### Challenges
    * This is online class, so we only can communicate with each other in Discord. 
-   * As Usually, we have 4 month long to make a application, but we only have 4 weeks to finish it. 
+   * Usually we have 4 months to do the application, but this time we only had 4 weeks to complete it. 
    ### Surprises
    * We completed all tasks and finished the project on schedule.
    * Each member of our group is good at communicating and teaching each other.
