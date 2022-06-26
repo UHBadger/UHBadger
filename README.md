@@ -139,7 +139,7 @@ Cheolhoon Choi:
     - Update tests.testcafe
     - Deployment
     
-# Assignment 5: 06/21/2022 - 06/27/2022\
+# Assignment 5: 06/21/2022 - 06/27/2022
 ## Roles and Responsibilities
 Feimei Chen:
  - New Completions:
