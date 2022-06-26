@@ -78,12 +78,11 @@ const ListSpending = ({ ready, spending }) => {
   const totalMiscRed = totalMiscellaneous.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
 
   const data = {
-    labels: ['Income', 'Home', 'Food', 'Transportation', 'Entertainment', 'Miscellaneous'],
+    labels: ['Home', 'Food', 'Transportation', 'Entertainment', 'Miscellaneous'],
     datasets: [
       {
         label: 'Money',
         backgroundColor: [
-          '#C9DE00',
           '#2FDE00',
           '#00A6B4',
           '#6800B4',
@@ -91,7 +90,6 @@ const ListSpending = ({ ready, spending }) => {
           '#B21F00',
         ],
         hoverBackgroundColor: [
-          '#4B5000',
           '#175000',
           '#003350',
           '#35014F',
@@ -99,7 +97,6 @@ const ListSpending = ({ ready, spending }) => {
           '#501800',
         ],
         data: [
-          totalIncomeRed,
           totalHomeRed,
           totalFoodRed,
           totalTransRed,

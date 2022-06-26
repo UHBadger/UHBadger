@@ -61,7 +61,7 @@ const EditSpending = ({ doc, ready, location }) => {
                     <NumField label='Amount' name='amount' />
                   </Card.Content>
                   <Card.Content>
-                    <TextField label='Date' name='date' />
+                    <TextField label='Date' name='date' placeholder='mm/dd/yyyy' />
                   </Card.Content>
                   <Card.Content>
                     <RadioField label='Category' name='category' />
