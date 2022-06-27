@@ -203,10 +203,10 @@ meteor npm run lint
 
 
 ## Closing Thoughts
-From this lesson, we learned that overall software development should focus more on the security aspects of the application, although the function and appearance of the page are important. While making this project, our team tried and tested many things and found that improvement was needed. 
+From this project, we learned that overall software development should focus more on the security aspects of the application, although the function and appearance of the page are important as well. While making this project, our team tried and tested many things and found that improvement was needed. 
    ### Challenges
-   * This is online class, so we only can communicate with each other in Discord. 
-   * Usually we have 4 months to do the application, but this time we only had 4 weeks to complete it. 
+   * This is an online class, so we communicated with each other on Discord. 
+   * Usually we have 4 months to work on a project, but this time we only had 4 weeks to complete it. 
    ### Surprises
    * We completed all tasks and finished the project on schedule.
    * Each member of our group is good at communicating and teaching each other.
