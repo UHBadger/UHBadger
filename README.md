@@ -179,11 +179,31 @@ The first time running the application will add default users:
 ```
 $ meteor npm run start
 
-> meteor-application-template-react@ start /Users/hanyeji/Desktop/github/UHBadger/app
+> meteor-application-template-react-production@1.0.3 start /Users/choi/Desktop/GitHub/UHBadger/app
 > meteor --no-release-check --exclude-archs web.browser.legacy,web.cordova --settings ../config/settings.development.json
+
+[[[[[ ~/Desktop/GitHub/UHBadger/app ]]]]]     
+
+=> Started proxy.                             
+=> Started MongoDB.                           
+I20220626-15:22:26.896(-10)? Monti APM: completed instrumenting the app
+=> Started your app.
+
+=> App running at: http://localhost:3000/
 ```
 
+### Viewing the running app locally
+If everything goes well, the template application appears at http://localhost:3000. 
+
+### ES Lint
+We can run ESLint to verify that our code complies with coding standards.
+```
+meteor npm run lint
+```
+
+
 ## Closing Thoughts
+From this lesson, we learned that overall software development should focus more on the security aspects of the application, although the function and appearance of the page are important. While making this project, our team tried and tested many things and found that improvement was needed. 
    ### Challenges
    * This is online class, so we only can communicate with each other in Discord. 
    * Usually we have 4 months to do the application, but this time we only had 4 weeks to complete it. 
