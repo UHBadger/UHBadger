@@ -159,7 +159,7 @@ Cheolhoon Choi:
 
 First, [install Meteor](https://www.meteor.com/developers/install).
 
-Second, download [UHBadger](https://github.com/UHBadger/UHBadger), and request permission to gain access to UHBadger. 
+Second, download [UHBadger](https://github.com/UHBadger/UHBadger) and request permission to gain access to UHBadger. 
 
 Third, cd into the app/ directory and install required libraries: meteor:
 
