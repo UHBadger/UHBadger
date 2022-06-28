@@ -174,7 +174,7 @@ After installation, you can run the application by typing:
 ```
 $ meteor npm run start
 ```
-The first time running the application will add default users: 
+Running the application for the first time will add default users: 
 
 ```
 $ meteor npm run start
