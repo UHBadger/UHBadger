@@ -212,6 +212,6 @@ From this project, we learned that overall software development should focus mor
    * Each member of our group is good at communicating and teaching each other.
 ## Link
  - [GihHub Repository](https://github.com/UHBadger/UHBadger)
- - [Documentation File]()
+ - [Documentation File](https://github.com/UHBadger/UHBadger/blob/main/doc/UHBadger.pdf)
  - [Release](https://github.com/UHBadger/UHBadger/releases/tag/v1.0.0)
  - [Wiki Page](https://github.com/UHBadger/UHBadger/wiki)
